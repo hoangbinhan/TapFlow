@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TapFlow – Auto Clicker for Android</title>
+<meta name="description" content="TapFlow is a free, ad-free auto clicker for Android. Multi-target taps and swipes, saved scripts, no internet permission.">
+<meta name="theme-color" content="#1f9d6b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <span class="logo" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5"/><circle cx="8" cy="8" r=".5"/></svg></span>
+      TapFlow
+    </a>
+    <nav>
+      <a class="hide-sm" href="#features"><span class="en">Features</span><span class="vi">Tính năng</span></a>
+      <a class="hide-sm" href="#how"><span class="en">How it works</span><span class="vi">Cách dùng</span></a>
+      <a href="privacy.html"><span class="en">Privacy</span><span class="vi">Quyền riêng tư</span></a>
+      <button class="lang" id="langBtn" type="button" aria-label="Change language">VI</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>
+      <span class="en">Tap automatically.<br>Keep it simple.</span>
+      <span class="vi">Tự động chạm.<br>Đơn giản, gọn nhẹ.</span>
+    </h1>
+    <p class="lead">
+      <span class="en">TapFlow is a lightweight auto clicker for Android. Place numbered markers on screen, set the timing, press Start. No ads, no analytics, no internet permission.</span>
+      <span class="vi">TapFlow là app tự động bấm màn hình nhẹ cho Android. Đặt các điểm chạm có đánh số, chỉnh thời gian, bấm Start. Không quảng cáo, không phân tích, không cần quyền internet.</span>
+    </p>
+    <!-- TODO: replace href with the Google Play / download link, then remove aria-disabled -->
+    <a class="btn" href="#" aria-disabled="true"><span class="en">Coming soon</span><span class="vi">Sắp ra mắt</span></a>
+    <a class="btn ghost" href="privacy.html"><span class="en">Privacy policy</span><span class="vi">Chính sách quyền riêng tư</span></a>
+    <div class="badges">
+      <span class="badge">Android 8.0+</span>
+      <span class="badge"><span class="en">No ads</span><span class="vi">Không quảng cáo</span></span>
+      <span class="badge"><span class="en">No internet permission</span><span class="vi">Không quyền internet</span></span>
+      <span class="badge">EN · VI</span>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <h2><span class="en">Features</span><span class="vi">Tính năng</span></h2>
+      <p class="sub"><span class="en">Everything you need, nothing you don't.</span><span class="vi">Đủ dùng, không rườm rà.</span></p>
+      <div class="grid">
+        <div class="card">
+          <h3><span class="en">Taps and swipes</span><span class="vi">Chạm và vuốt</span></h3>
+          <p><span class="en">Tap, double tap, long press and swipe. Targets sharing the same order run together as one multi-touch gesture.</span><span class="vi">Chạm, chạm đúp, nhấn giữ và vuốt. Các điểm cùng thứ tự được chạy đồng thời như một cử chỉ đa chạm.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="en">Floating panel</span><span class="vi">Bảng điều khiển nổi</span></h3>
+          <p><span class="en">Start, pause, resume and stop from any app. Fold it into a small bubble while a run goes on.</span><span class="vi">Start, tạm dừng, tiếp tục và dừng ngay trong mọi app. Thu gọn thành bong bóng nhỏ khi đang chạy.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="en">Flexible timing</span><span class="vi">Thời gian linh hoạt</span></h3>
+          <p><span class="en">Interval in ms, seconds or minutes. Stop after N cycles or a time limit, with optional random timing and position.</span><span class="vi">Khoảng cách theo ms, giây hoặc phút. Dừng sau N vòng hoặc hết thời gian, có thể thêm ngẫu nhiên thời gian và vị trí.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="en">Saved scripts</span><span class="vi">Lưu kịch bản</span></h3>
+          <p><span class="en">Save, rename, duplicate and import/export scripts as JSON.</span><span class="vi">Lưu, đổi tên, nhân bản, nhập/xuất kịch bản dạng JSON.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="en">Test mode</span><span class="vi">Chế độ thử</span></h3>
+          <p><span class="en">A built-in stage that lights up every touch and measures the real interval, so you can check a script before using it.</span><span class="vi">Màn hình thử hiển thị từng lần chạm và đo khoảng cách thực tế, giúp kiểm tra kịch bản trước khi dùng.</span></p>
+        </div>
+        <div class="card">
+          <h3><span class="en">Quick Settings tile</span><span class="vi">Ô cài đặt nhanh</span></h3>
+          <p><span class="en">Start or stop the current script from the notification shade. Volume Down can stop a run too.</span><span class="vi">Bật/tắt kịch bản hiện tại từ thanh thông báo. Phím giảm âm lượng cũng dừng được lượt chạy.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2><span class="en">How it works</span><span class="vi">Cách dùng</span></h2>
+      <p class="sub"><span class="en">Three steps.</span><span class="vi">Ba bước.</span></p>
+      <ol class="steps">
+        <li><span class="en"><strong>Turn on the accessibility service.</strong> Settings → Accessibility → TapFlow. Android needs this to let the app perform taps for you.</span><span class="vi"><strong>Bật dịch vụ hỗ trợ tiếp cận.</strong> Cài đặt → Hỗ trợ tiếp cận → TapFlow. Android cần quyền này để app thực hiện thao tác chạm thay bạn.</span></li>
+        <li><span class="en"><strong>Place your targets.</strong> Open the floating panel, add taps or swipes, drag the markers where you want them.</span><span class="vi"><strong>Đặt các điểm chạm.</strong> Mở bảng nổi, thêm chạm hoặc vuốt, kéo các điểm đến vị trí mong muốn.</span></li>
+        <li><span class="en"><strong>Set timing and press Start.</strong> Choose the interval and limits, then start. Stop anytime from the panel.</span><span class="vi"><strong>Chỉnh thời gian rồi bấm Start.</strong> Chọn khoảng cách và giới hạn, sau đó bắt đầu. Dừng bất cứ lúc nào từ bảng nổi.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="privacy-summary">
+    <div class="wrap">
+      <h2><span class="en">Privacy first</span><span class="vi">Quyền riêng tư là ưu tiên</span></h2>
+      <div class="notice">
+        <p class="flush">
+          <span class="en">TapFlow uses Android's accessibility service only to perform the taps and swipes you configure. It never reads what is on your screen, and the app has no internet permission, so nothing you do leaves your device. <a href="privacy.html">Read the full privacy policy</a>.</span>
+          <span class="vi">TapFlow dùng dịch vụ hỗ trợ tiếp cận của Android chỉ để thực hiện các cú chạm và vuốt do bạn cài đặt. App không đọc nội dung màn hình và không có quyền internet, nên dữ liệu không rời khỏi thiết bị. <a href="privacy.html?lang=vi">Xem chính sách quyền riêng tư đầy đủ</a>.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <details>
+        <summary><span class="en">Why does it need the accessibility permission?</span><span class="vi">Vì sao cần quyền hỗ trợ tiếp cận?</span></summary>
+        <p><span class="en">Android only lets an app inject taps and swipes through an accessibility service. TapFlow uses it for that single purpose.</span><span class="vi">Android chỉ cho phép app tạo thao tác chạm và vuốt thông qua dịch vụ hỗ trợ tiếp cận. TapFlow chỉ dùng cho đúng mục đích đó.</span></p>
+      </details>
+      <details>
+        <summary><span class="en">Why can't I turn the service on (greyed out)?</span><span class="vi">Vì sao không bật được dịch vụ (bị mờ)?</span></summary>
+        <p><span class="en">On Android 13+, apps installed outside the Play Store need "Allow restricted settings" first: App info → ⋮ → Allow restricted settings. The in-app guide walks you through it.</span><span class="vi">Từ Android 13, app cài ngoài Play Store cần bật "Cho phép cài đặt bị hạn chế" trước: Thông tin ứng dụng → ⋮ → Cho phép cài đặt bị hạn chế. Phần hướng dẫn trong app sẽ chỉ từng bước.</span></p>
+      </details>
+      <details>
+        <summary><span class="en">Does it work in every app?</span><span class="vi">Có dùng được trong mọi app không?</span></summary>
+        <p><span class="en">Not in secure windows such as banking apps or some system dialogs: Android blocks injected touches there. Some phone makers also need auto-start or battery exclusions.</span><span class="vi">Không dùng được trong cửa sổ bảo mật như app ngân hàng hoặc một số hộp thoại hệ thống vì Android chặn thao tác giả lập ở đó. Một số hãng máy còn cần cho phép tự khởi động hoặc bỏ giới hạn pin.</span></p>
+      </details>
+      <details>
+        <summary><span class="en">Is it free?</span><span class="vi">App có miễn phí không?</span></summary>
+        <p><span class="en">Yes, with no ads and no tracking.</span><span class="vi">Có, không quảng cáo và không theo dõi.</span></p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> TapFlow</span>
+    <span>
+      <a href="privacy.html"><span class="en">Privacy policy</span><span class="vi">Chính sách quyền riêng tư</span></a>
+    </span>
+  </div>
+</footer>
+</body>
+</html>

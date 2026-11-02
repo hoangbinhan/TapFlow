@@ -1,0 +1,59 @@
+:root{
+  --bg:#fafafa;--surface:#fff;--text:#16181d;--muted:#5f6672;--line:#e4e6ea;
+  --accent:#1f9d6b;--accent-ink:#fff;--accent-soft:#e6f6ef;
+  --radius:14px;--max:980px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1114;--surface:#171a1f;--text:#eceef1;--muted:#9aa2ae;--line:#272b32;--accent:#3ac28c;--accent-ink:#06130d;--accent-soft:#12261e}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+header.site{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text);text-decoration:none}
+.logo{width:28px;height:28px;border-radius:8px;background:var(--accent);display:grid;place-items:center}
+.logo svg{width:16px;height:16px;fill:none;stroke:var(--accent-ink);stroke-width:2.5;stroke-linecap:round}
+nav{display:flex;align-items:center;gap:16px;font-size:.92rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text)}
+.lang{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:4px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.hero{padding:72px 0 56px;text-align:center}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:0 0 16px;letter-spacing:-.02em}
+.hero p.lead{max-width:620px;margin:0 auto 28px;color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;border:1px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--line);margin-left:8px}
+.btn[aria-disabled=true]{opacity:.55;pointer-events:none}
+.badges{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.badge{font-size:.8rem;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);border:1px solid var(--line)}
+section{padding:48px 0}
+section h2{font-size:1.6rem;margin:0 0 8px;letter-spacing:-.01em}
+section .sub{color:var(--muted);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 16px 56px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.notice{background:var(--accent-soft);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;color:var(--text)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+footer a{color:var(--muted)}
+/* language switch */
+html[data-lang=en] .vi{display:none!important}
+html[data-lang=vi] .en{display:none!important}
+/* policy page */
+.doc{padding:48px 0 64px;max-width:760px}
+.doc h1{font-size:2rem;margin:0 0 4px}
+.doc h2{font-size:1.25rem;margin:32px 0 8px}
+.doc .meta{color:var(--muted);margin:0 0 24px}
+.doc ul{padding-left:22px}
+.doc li{margin:4px 0}
+@media (max-width:560px){nav .hide-sm{display:none}.btn.ghost{margin:8px 0 0}}
+.notice .flush{margin:0}

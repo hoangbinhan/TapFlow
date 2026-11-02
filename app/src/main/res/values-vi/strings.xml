@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TapFlow</string>
+    <string name="a11y_description">TapFlow thực hiện các thao tác chạm và vuốt do bạn thiết lập. Ứng dụng không đọc, ghi lại hay gửi đi bất cứ nội dung nào trên màn hình.</string>
+
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_scripts">Kịch bản</string>
+    <string name="nav_settings">Cài đặt</string>
+
+    <string name="status_ready">Sẵn sàng</string>
+    <string name="status_setup">Cần thiết lập</string>
+    <string name="status_setup_desc">TapFlow cần bật dịch vụ hỗ trợ tiếp cận để thực hiện thao tác chạm và vuốt.</string>
+    <string name="status_stale">Dịch vụ chưa chạy</string>
+    <string name="status_stale_desc">Dịch vụ đã được bật nhưng hệ thống đã dừng nó (tiết kiệm pin hoặc trình dọn dẹp). Hãy tắt rồi bật lại trong cài đặt Hỗ trợ tiếp cận.</string>
+    <string name="btn_open_accessibility">Mở cài đặt Hỗ trợ tiếp cận</string>
+    <string name="restricted_hint">Cài từ file? Trên Android 13 trở lên, công tắc có thể bị mờ. Hãy mở Thông tin ứng dụng, chạm ⋮ và chọn “Cho phép cài đặt bị hạn chế”, rồi thử lại.</string>
+    <string name="btn_open_app_info">Mở Thông tin ứng dụng</string>
+    <string name="btn_setup_guide">Hướng dẫn thiết lập</string>
+
+    <string name="btn_show_panel">Hiện bảng điều khiển nổi</string>
+    <string name="btn_hide_panel">Ẩn bảng điều khiển nổi</string>
+    <plurals name="panel_targets">
+        <item quantity="other">%d mục tiêu</item>
+    </plurals>
+    <string name="panel_countdown">Bắt đầu sau %d…</string>
+    <string name="panel_running">Đang chạy · %d lần click</string>
+    <string name="panel_paused">Tạm dừng · %d lần click</string>
+    <string name="panel_finished">Đã dừng · %d lần click</string>
+    <string name="toast_overlay_failed">Không thể hiện bảng điều khiển. Hãy kiểm tra dịch vụ hỗ trợ tiếp cận đã bật chưa.</string>
+    <string name="toast_no_targets">Hãy thêm ít nhất một mục tiêu.</string>
+    <string name="toast_max_targets">Đã đạt số mục tiêu tối đa.</string>
+    <string name="cd_stop">Dừng</string>
+    <string name="cd_drag">Di chuyển bảng</string>
+    <string name="cd_add_tap">Thêm điểm chạm</string>
+    <string name="cd_add_swipe">Thêm thao tác vuốt</string>
+    <string name="cd_remove_last">Xóa mục tiêu cuối</string>
+    <string name="cd_open_app">Mở TapFlow</string>
+    <string name="cd_close">Đóng bảng</string>
+    <string name="cd_marker">Mục tiêu %1$s</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_more">Tùy chọn khác</string>
+
+    <string name="run_countdown">Bắt đầu sau %d…</string>
+    <string name="run_running">Đang chạy</string>
+    <string name="run_paused">Tạm dừng</string>
+    <string name="run_stopped">Đã dừng: %s</string>
+    <string name="run_stats">%1$d lần click · %2$d vòng · %3$s</string>
+    <string name="run_failures">%d thao tác bị hệ thống từ chối hoặc hủy.</string>
+    <string name="run_screen_off_hint">Lượt chạy sẽ dừng khi tắt màn hình. Hãy giữ màn hình sáng khi click.</string>
+    <string name="stop_user">bạn đã dừng</string>
+    <string name="stop_count">đã đạt số vòng lặp</string>
+    <string name="stop_time">đã hết thời gian</string>
+    <string name="stop_screen_off">màn hình đã tắt</string>
+    <string name="stop_gesture_failed">hệ thống liên tục từ chối thao tác</string>
+    <string name="stop_no_targets">không có mục tiêu để click</string>
+    <string name="stop_service_lost">dịch vụ hỗ trợ tiếp cận đã dừng</string>
+    <string name="stop_volume">đã nhấn Giảm âm lượng</string>
+
+    <string name="cfg_title">Cài đặt click</string>
+    <string name="cfg_interval">Khoảng cách giữa các lần click</string>
+    <string name="unit_ms">ms</string>
+    <string name="unit_s">giây</string>
+    <string name="unit_min">phút</string>
+    <string name="warn_fast_interval">Khoảng cách quá ngắn có thể bị Android hoặc ứng dụng đích giới hạn.</string>
+    <string name="cfg_stop_mode">Dừng</string>
+    <string name="stop_mode_infinite">Vô hạn</string>
+    <string name="stop_mode_count">Số vòng</string>
+    <string name="stop_mode_time">Thời lượng</string>
+    <string name="cfg_count">Số vòng lặp</string>
+    <string name="cfg_duration">Thời lượng (giây)</string>
+    <string name="cfg_start_delay">Trễ khi bắt đầu: %d giây</string>
+    <string name="cfg_time_jitter">Ngẫu nhiên thời gian: ±%d%%</string>
+    <string name="cfg_pos_jitter">Ngẫu nhiên vị trí: ±%d px</string>
+    <string name="err_required">Hãy nhập một số</string>
+    <string name="err_number">Số không hợp lệ</string>
+    <string name="err_range">Nhập giá trị từ %1$d đến %2$d</string>
+    <string name="err_interval_min">Tối thiểu là %d ms</string>
+    <string name="err_interval_max">Tối đa là 24 giờ</string>
+
+    <string name="tgt_title">Mục tiêu</string>
+    <string name="tgt_hold">Thời gian nhấn (ms)</string>
+    <string name="tgt_swipe_time">Thời gian vuốt (ms)</string>
+    <string name="tgt_custom_delay">Độ trễ riêng sau mục tiêu này</string>
+    <string name="tgt_delay">Trễ sau (ms)</string>
+    <string name="toast_panel_covers">Có mục tiêu nằm dưới bảng. Hãy di chuyển một trong hai.</string>
+
+    <string name="save_title">Lưu kịch bản</string>
+    <string name="save_name_label">Tên</string>
+    <string name="save_overwrite">Thay thế kịch bản đang tải</string>
+    <string name="save_default_name">Kịch bản %d</string>
+    <string name="saved_snack">Đã lưu “%s”</string>
+    <string name="btn_save">Lưu</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="err_library_full">Thư viện kịch bản đã đầy. Hãy xóa bớt một kịch bản.</string>
+
+    <string name="btn_import">Nhập</string>
+    <string name="btn_export_all">Xuất tất cả</string>
+    <string name="scripts_empty_title">Chưa có kịch bản nào</string>
+    <string name="scripts_empty_desc">Đặt các mục tiêu bằng bảng điều khiển nổi, rồi lưu lại ở tab Trang chủ để dùng lại sau.</string>
+    <string name="btn_load">Tải</string>
+    <string name="btn_reload">Tải lại</string>
+    <string name="menu_rename">Đổi tên</string>
+    <string name="menu_duplicate">Nhân bản</string>
+    <string name="menu_export">Xuất</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="delete_title">Xóa “%s”?</string>
+    <string name="delete_desc">Không thể hoàn tác. Lượt chạy đang diễn ra vẫn dùng bản sao riêng của nó.</string>
+    <string name="copy_suffix">(bản sao)</string>
+    <string name="loaded_snack">Đã tải “%s”</string>
+    <string name="err_busy_load">Hãy dừng lượt chạy hiện tại trước khi tải kịch bản khác.</string>
+    <plurals name="import_ok">
+        <item quantity="other">Đã nhập %d kịch bản</item>
+    </plurals>
+    <string name="import_invalid">Tệp này không phải bản xuất hợp lệ của TapFlow.</string>
+    <string name="import_failed">Không thể đọc tệp này.</string>
+    <string name="export_ok">Đã xuất</string>
+    <string name="export_failed">Không thể ghi tệp.</string>
+    <string name="summary_every">mỗi %s</string>
+    <string name="summary_count">%d vòng</string>
+    <string name="summary_duration">%d giây</string>
+
+    <string name="settings_safety">An toàn</string>
+    <string name="set_volume_title">Dừng khẩn cấp bằng nút Giảm âm lượng</string>
+    <string name="set_volume_desc">Khi đang chạy, nhấn Giảm âm lượng sẽ dừng ngay.</string>
+    <string name="set_notif_title">Thông báo dừng</string>
+    <string name="set_notif_desc">Hiện thông báo có nút Dừng khi đang chạy.</string>
+    <string name="set_haptics_title">Rung khi nhấn giữ</string>
+    <string name="settings_trouble">Khắc phục sự cố</string>
+    <string name="trouble_desc">Nếu click không hoạt động: hãy tắt rồi bật lại dịch vụ, cho phép cài đặt bị hạn chế, và loại TapFlow khỏi tối ưu hóa pin hoặc giới hạn tự khởi động.</string>
+    <string name="btn_battery">Tối ưu hóa pin</string>
+    <string name="settings_about">Giới thiệu</string>
+    <string name="about_privacy">Không quảng cáo, không theo dõi, không dùng internet. Kịch bản chỉ nằm trên thiết bị của bạn.</string>
+    <string name="about_version">Phiên bản %s</string>
+    <string name="test_taps">Lần chạm</string>
+    <string name="test_swipes">Lần vuốt</string>
+    <string name="btn_reset">Đặt lại bộ đếm</string>
+
+    <string name="guide_title">Hướng dẫn thiết lập</string>
+    <string name="guide_step">Bước %1$d / %2$d</string>
+    <string name="guide1_title">TapFlow hoạt động thế nào</string>
+    <string name="guide1_body">TapFlow hiện một bảng điều khiển nhỏ nổi trên các ứng dụng khác. Đặt các mốc đánh số tại vị trí cần chạm hoặc vuốt, chọn khoảng cách thời gian rồi nhấn Bắt đầu. Khi chạy, các mốc sẽ mờ đi và không nhận chạm.</string>
+    <string name="guide2_title">Cho phép cài đặt bị hạn chế</string>
+    <string name="guide2_body">Nếu bạn cài TapFlow từ file thay vì cửa hàng ứng dụng, Android 13 trở lên sẽ chặn quyền hỗ trợ tiếp cận cho đến khi bạn cho phép. Mở Thông tin ứng dụng, chạm menu ⋮ ở góc, chọn “Cho phép cài đặt bị hạn chế” và xác nhận.</string>
+    <string name="guide3_title">Bật dịch vụ</string>
+    <string name="guide3_body">Mở cài đặt Hỗ trợ tiếp cận, chọn TapFlow trong danh sách ứng dụng đã cài và bật lên. TapFlow chỉ thực hiện thao tác, không bao giờ đọc màn hình của bạn.</string>
+    <string name="guide4_title">Luôn kiểm soát được</string>
+    <string name="guide4_body">Nhấn Dừng trên bảng điều khiển, nhấn Giảm âm lượng, hoặc dùng nút trong thông báo bất cứ lúc nào. Lượt chạy cũng dừng khi tắt màn hình. Hãy dùng Vùng thử để thử cài đặt an toàn.</string>
+    <string name="btn_back">Quay lại</string>
+    <string name="btn_skip">Bỏ qua</string>
+    <string name="btn_next">Tiếp</string>
+    <string name="btn_done">Xong</string>
+
+    <string name="notif_channel">Trạng thái chạy</string>
+    <string name="notif_running">Đang click</string>
+    <string name="notif_paused">Click đang tạm dừng</string>
+    <string name="notif_stop">Dừng</string>
+
+    <!-- Test mode -->
+    <string name="nav_test">Thử</string>
+    <string name="tm_hint">Chế độ thử. Dùng bảng nổi để thêm chạm và vuốt, rồi bấm Bắt đầu. Mọi chạm đều sáng lên ở đây.</string>
+    <string name="tm_exit">Thoát</string>
+    <string name="tm_last_tap">Chạm #%1$d · x %2$d, y %3$d · %4$d ms</string>
+    <string name="tm_last_swipe">Vuốt #%1$d · %2$d ms</string>
+    <string name="tm_needs_service">Chế độ thử hiển thị các thao tác chạm và vuốt thật mà TapFlow thực hiện, nên cần bật dịch vụ trợ năng trước.</string>
+    <string name="tm_interval">Cách nhau (đầu→đầu): TB %1$d · nhỏ nhất %2$d · lớn nhất %3$d ms (interval %4$d + thời gian nhấn)</string>
+    <string name="tile_label">TapFlow</string>
+    <string name="tile_idle">Chạm để bắt đầu</string>
+    <string name="tile_off">Dịch vụ đang tắt</string>
+    <string name="cd_save">Lưu kịch bản</string>
+    <!-- Home: advanced, target order and type -->
+    <string name="adv_title">Nâng cao</string>
+    <string name="adv_summary">Trễ bắt đầu %1$d giây · thời gian ±%2$d%% · vị trí ±%3$d px</string>
+    <string name="tgt_order">Thứ tự</string>
+    <string name="tgt_order_hint">Các mục cùng số sẽ được thực hiện cùng lúc.</string>
+    <string name="tgt_type_tap">Chạm</string>
+    <string name="tgt_type_double">Chạm đúp</string>
+    <string name="tgt_type_long">Nhấn giữ</string>
+    <string name="tgt_kind_swipe">Vuốt</string>
+    <string name="tgt_gap">Khoảng cách giữa các lần chạm (ms)</string>
+    <!-- Floating panel: undo -->
+    <string name="panel_removed">Đã xoá %1$s · chạm vào đây để hoàn tác</string>
+    <string name="panel_restored">Đã khôi phục</string>
+    <!-- Panel run controls (labelled) -->
+    <string name="panel_start">Bắt đầu</string>
+    <string name="panel_pause">Tạm dừng</string>
+    <string name="panel_resume">Tiếp tục</string>
+    <string name="panel_stop">Dừng</string>
+    <string name="btn_run_again">Chạy lại</string>
+    <string name="btn_panel_show">Hiện bảng</string>
+    <string name="btn_panel_hide">Ẩn bảng</string>
+    <string name="run_paused_hint">Tiếp tục sẽ chạy tiếp từ chỗ đã dừng. Dừng sẽ kết thúc lượt chạy.</string>
+    <string name="plan_until_stop">đến khi bạn dừng</string>
+    <plurals name="plan_cycles">
+        <item quantity="other">trong %d vòng</item>
+    </plurals>
+    <string name="plan_for_time">trong %s</string>
+    <string name="empty_step1">Hiện bảng điều khiển nổi, rồi chuyển sang ứng dụng bạn muốn chạm.</string>
+    <string name="empty_step2">Trên bảng, nhấn nút ◎ để thêm một điểm chạm và kéo điểm đó đến đúng vị trí.</string>
+    <string name="empty_step3">Nhấn Bắt đầu trên bảng. Có thể nhấn Dừng bất cứ lúc nào.</string>
+    <string name="menu_clone">Nhân bản</string>
+    <string name="panel_cloned">Đã nhân bản thành %1$s · chạy cùng lúc</string>
+    <string name="cd_minimize">Thu nhỏ bảng</string>
+    <string name="cd_bubble">Hiện bảng</string>
+</resources>

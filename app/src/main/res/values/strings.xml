@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TapFlow</string>
+    <string name="a11y_description">TapFlow performs the taps and swipes you set up, on your behalf. It does not read, record or send anything shown on your screen.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_scripts">Scripts</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Status card -->
+    <string name="status_ready">Ready</string>
+    <string name="status_setup">Setup needed</string>
+    <string name="status_setup_desc">TapFlow needs its accessibility service turned on to perform taps and swipes.</string>
+    <string name="status_stale">Service not running</string>
+    <string name="status_stale_desc">The service is enabled but the system stopped it (battery saver or a task killer). Turn it off and on again in Accessibility settings.</string>
+    <string name="btn_open_accessibility">Open Accessibility settings</string>
+    <string name="restricted_hint">Installed from a file? On Android 13+ the switch may be greyed out. Open App info, tap ⋮ and choose “Allow restricted settings”, then try again.</string>
+    <string name="btn_open_app_info">Open App info</string>
+    <string name="btn_setup_guide">Setup guide</string>
+
+    <!-- Floating panel -->
+    <string name="btn_show_panel">Show floating panel</string>
+    <string name="btn_hide_panel">Hide floating panel</string>
+    <plurals name="panel_targets">
+        <item quantity="one">%d target</item>
+        <item quantity="other">%d targets</item>
+    </plurals>
+    <string name="panel_countdown">Starting in %d…</string>
+    <string name="panel_running">Running · clicks: %d</string>
+    <string name="panel_paused">Paused · clicks: %d</string>
+    <string name="panel_finished">Stopped · clicks: %d</string>
+    <string name="toast_overlay_failed">Could not show the panel. Check that the accessibility service is on.</string>
+    <string name="toast_no_targets">Add at least one target first.</string>
+    <string name="toast_max_targets">Maximum number of targets reached.</string>
+    <string name="cd_stop">Stop</string>
+    <string name="cd_drag">Move panel</string>
+    <string name="cd_add_tap">Add tap target</string>
+    <string name="cd_add_swipe">Add swipe</string>
+    <string name="cd_remove_last">Remove last target</string>
+    <string name="cd_open_app">Open TapFlow</string>
+    <string name="cd_close">Close panel</string>
+    <string name="cd_marker">Target %1$s</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_more">More options</string>
+
+    <!-- Run card -->
+    <string name="run_countdown">Starting in %d…</string>
+    <string name="run_running">Running</string>
+    <string name="run_paused">Paused</string>
+    <string name="run_stopped">Stopped: %s</string>
+    <string name="run_stats">Clicks: %1$d · Cycles: %2$d · Time: %3$s</string>
+    <string name="run_failures">Gestures rejected or cancelled by the system: %d</string>
+    <string name="run_screen_off_hint">Runs stop when the screen turns off. Keep the screen on while clicking.</string>
+    <string name="stop_user">stopped by you</string>
+    <string name="stop_count">reached the repeat count</string>
+    <string name="stop_time">reached the time limit</string>
+    <string name="stop_screen_off">screen turned off</string>
+    <string name="stop_gesture_failed">the system kept rejecting gestures</string>
+    <string name="stop_no_targets">no targets to click</string>
+    <string name="stop_service_lost">accessibility service stopped</string>
+    <string name="stop_volume">Volume Down pressed</string>
+
+    <!-- Settings of a run -->
+    <string name="cfg_title">Click settings</string>
+    <string name="cfg_interval">Interval between clicks</string>
+    <string name="unit_ms">ms</string>
+    <string name="unit_s">s</string>
+    <string name="unit_min">min</string>
+    <string name="warn_fast_interval">Very fast intervals may be throttled by Android or by the app you are clicking in.</string>
+    <string name="cfg_stop_mode">Stop</string>
+    <string name="stop_mode_infinite">Never</string>
+    <string name="stop_mode_count">N cycles</string>
+    <string name="stop_mode_time">Duration</string>
+    <string name="cfg_count">Number of cycles</string>
+    <string name="cfg_duration">Duration (seconds)</string>
+    <string name="cfg_start_delay">Start delay: %d s</string>
+    <string name="cfg_time_jitter">Random timing: ±%d%%</string>
+    <string name="cfg_pos_jitter">Random position: ±%d px</string>
+    <string name="err_required">Enter a number</string>
+    <string name="err_number">Not a valid number</string>
+    <string name="err_range">Enter a value from %1$d to %2$d</string>
+    <string name="err_interval_min">Minimum is %d ms</string>
+    <string name="err_interval_max">Maximum is 24 hours</string>
+
+    <!-- Per-target settings -->
+    <string name="tgt_title">Targets</string>
+    <string name="tgt_hold">Press time (ms)</string>
+    <string name="tgt_swipe_time">Swipe time (ms)</string>
+    <string name="tgt_custom_delay">Custom delay after this target</string>
+    <string name="tgt_delay">Delay after (ms)</string>
+    <string name="toast_panel_covers">A target is under the panel. Move one of them first.</string>
+
+    <!-- Save -->
+    <string name="save_title">Save script</string>
+    <string name="save_name_label">Name</string>
+    <string name="save_overwrite">Replace the loaded script</string>
+    <string name="save_default_name">Script %d</string>
+    <string name="saved_snack">Saved “%s”</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="err_library_full">The script library is full. Delete a script first.</string>
+
+    <!-- Scripts -->
+    <string name="btn_import">Import</string>
+    <string name="btn_export_all">Export all</string>
+    <string name="scripts_empty_title">No saved scripts</string>
+    <string name="scripts_empty_desc">Set up targets with the floating panel, then save them from the Home tab to reuse later.</string>
+    <string name="btn_load">Load</string>
+    <string name="btn_reload">Reload</string>
+    <string name="menu_rename">Rename</string>
+    <string name="menu_duplicate">Duplicate</string>
+    <string name="menu_export">Export</string>
+    <string name="btn_delete">Delete</string>
+    <string name="delete_title">Delete “%s”?</string>
+    <string name="delete_desc">This cannot be undone. A run that is already going will keep using its own copy.</string>
+    <string name="copy_suffix">(copy)</string>
+    <string name="loaded_snack">Loaded “%s”</string>
+    <string name="err_busy_load">Stop the current run before loading another script.</string>
+    <plurals name="import_ok">
+        <item quantity="one">Imported %d script</item>
+        <item quantity="other">Imported %d scripts</item>
+    </plurals>
+    <string name="import_invalid">That file is not a valid TapFlow export.</string>
+    <string name="import_failed">Could not read that file.</string>
+    <string name="export_ok">Exported</string>
+    <string name="export_failed">Could not write the file.</string>
+    <string name="summary_every">every %s</string>
+    <string name="summary_count">cycles: %d</string>
+    <string name="summary_duration">%d s</string>
+
+    <!-- Settings screen -->
+    <string name="settings_safety">Safety</string>
+    <string name="set_volume_title">Volume Down emergency stop</string>
+    <string name="set_volume_desc">While a run is active, pressing Volume Down stops it.</string>
+    <string name="set_notif_title">Stop notification</string>
+    <string name="set_notif_desc">Show a notification with a Stop button while a run is active.</string>
+    <string name="set_haptics_title">Vibrate on long-press</string>
+    <string name="settings_trouble">Troubleshooting</string>
+    <string name="trouble_desc">If clicking stops working: turn the service off and on again, allow restricted settings, and exclude TapFlow from battery optimisation or auto-start limits.</string>
+    <string name="btn_battery">Battery optimisation</string>
+    <string name="settings_about">About</string>
+    <string name="about_privacy">No ads, no tracking, no internet access. Scripts stay on your device.</string>
+    <string name="about_version">Version %s</string>
+
+    <!-- Test pad -->
+    <string name="test_taps">Taps</string>
+    <string name="test_swipes">Swipes</string>
+    <string name="btn_reset">Reset counters</string>
+
+    <!-- Guide -->
+    <string name="guide_title">Setup guide</string>
+    <string name="guide_step">Step %1$d of %2$d</string>
+    <string name="guide1_title">How TapFlow works</string>
+    <string name="guide1_body">TapFlow shows a small floating panel over other apps. Place numbered markers where you want taps or swipes, set the interval, then press Start. Markers become see-through and ignore touches while running.</string>
+    <string name="guide2_title">Allow restricted settings</string>
+    <string name="guide2_body">If you installed TapFlow from a file instead of a store, Android 13 and newer blocks accessibility access until you allow it. Open App info, tap the ⋮ menu in the corner, choose “Allow restricted settings” and confirm.</string>
+    <string name="guide3_title">Turn on the service</string>
+    <string name="guide3_body">Open Accessibility settings, choose TapFlow under installed apps and switch it on. TapFlow only performs gestures; it never reads your screen.</string>
+    <string name="guide4_title">Stay in control</string>
+    <string name="guide4_body">Press Stop on the panel, press Volume Down, or use the notification button at any time. Runs also stop when the screen turns off. Use the Test pad to try settings safely.</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_skip">Skip</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_done">Done</string>
+
+    <!-- Notification -->
+    <string name="notif_channel">Run status</string>
+    <string name="notif_running">Clicking is running</string>
+    <string name="notif_paused">Clicking is paused</string>
+    <string name="notif_stop">Stop</string>
+
+    <!-- Test mode -->
+    <string name="nav_test">Test</string>
+    <string name="tm_hint">Test mode. Use the floating panel to add taps and swipes, then press Start. Every touch lights up here.</string>
+    <string name="tm_exit">Exit</string>
+    <string name="tm_last_tap">Tap #%1$d · x %2$d, y %3$d · %4$d ms</string>
+    <string name="tm_last_swipe">Swipe #%1$d · %2$d ms</string>
+    <string name="tm_needs_service">Test mode shows the real taps and swipes TapFlow performs, so the accessibility service has to be on first.</string>
+    <string name="tm_interval">Start-to-start gap: avg %1$d · min %2$d · max %3$d ms (interval %4$d + press time)</string>
+    <string name="tile_label">TapFlow</string>
+    <string name="tile_idle">Tap to start</string>
+    <string name="tile_off">Service off</string>
+    <string name="cd_save">Save script</string>
+    <!-- Home: advanced, target order and type -->
+    <string name="adv_title">Advanced</string>
+    <string name="adv_summary">Start delay %1$d s · timing ±%2$d%% · position ±%3$d px</string>
+    <string name="tgt_order">Order</string>
+    <string name="tgt_order_hint">Targets with the same number are performed together.</string>
+    <string name="tgt_type_tap">Tap</string>
+    <string name="tgt_type_double">Double tap</string>
+    <string name="tgt_type_long">Long press</string>
+    <string name="tgt_kind_swipe">Swipe</string>
+    <string name="tgt_gap">Gap between taps (ms)</string>
+    <!-- Floating panel: undo -->
+    <string name="panel_removed">Removed %1$s · tap here to undo</string>
+    <string name="panel_restored">Restored</string>
+    <!-- Panel run controls (labelled) -->
+    <string name="panel_start">Start</string>
+    <string name="panel_pause">Pause</string>
+    <string name="panel_resume">Resume</string>
+    <string name="panel_stop">Stop</string>
+    <!-- Home: run card -->
+    <string name="btn_run_again">Run again</string>
+    <string name="btn_panel_show">Show panel</string>
+    <string name="btn_panel_hide">Hide panel</string>
+    <string name="run_paused_hint">Resume continues where it stopped. Stop ends the run.</string>
+    <string name="plan_until_stop">until you stop</string>
+    <plurals name="plan_cycles">
+        <item quantity="one">for %d cycle</item>
+        <item quantity="other">for %d cycles</item>
+    </plurals>
+    <string name="plan_for_time">for %s</string>
+    <string name="empty_step1">Show the floating panel, then switch to the app you want to tap in.</string>
+    <string name="empty_step2">On the panel, press the ◎ button to add a tap and drag its marker onto the spot.</string>
+    <string name="empty_step3">Press Start on the panel. Press Stop any time.</string>
+    <!-- Marker menu, minimize -->
+    <string name="menu_clone">Clone</string>
+    <string name="panel_cloned">Cloned as %1$s · runs together</string>
+    <string name="cd_minimize">Minimize panel</string>
+    <string name="cd_bubble">Show panel</string>
+</resources>
